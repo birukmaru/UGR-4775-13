@@ -54,19 +54,31 @@
       <div>
         <img src="images/Portfolio.jpg" alt="Portfolio image" />
       </div>
-
-      <div>
-        <form>
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Your Email" />
-          <textarea name="message" placeholder="Your Message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
       <div class="call-to-action">
         <a href="contact.html">Contact Me</a>
       </div>
+
+      <h2>Contact Form</h2>
+      <form action="process_form.php" method="POST">
+        <table>
+          <tr>
+            <th><input type="text" name="name" placeholder="Your Name" /></th>
+          </tr>
+
+          <tr>
+            <th>
+              <input type="email" name="email" placeholder="Your Email" />
+            </th>
+          </tr>
+
+          <tr>
+            <th>
+              <textarea name="message" placeholder="Your Message"></textarea>
+            </th>
+          </tr>
+        </table>
+        <input type="submit" value="Submit" />
+      </form>
     </main>
 
     <footer>
