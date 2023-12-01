@@ -5,48 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <h1>Brak</h1>
-      </div>
       <nav>
-        <ul class="navigation">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Resume.html">Resume</a></li>
-          <li><a href="Visit.html">visit</a></li>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='Home.html'><h1>Brak</h1></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Visit.html">Visit</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
       </nav>
     </header>
+    <main>
+      
+      <div class="text">
+        <h3>I'M</h3>
+        <h1>BIRUK,</h1>
+        <h3>I HELP COMPANIES MAKE A BEAUTIFUL WEBSITE</h3>
+      </div>
+      
+  
+      <div class="picture">
+          <img src="images/Portfolio.jpg" alt="portfolio pic" />
+          
+      </div>
+  
+      
+  
+      <div class="call-to-action">
+        <a href="contact.html">Contact Me</a>
+      </div>
+  
+    </main>
 
-    <div class="social-media">
-      <a href="https://www.facebook.com"
-        ><img src="facebook-icon.png" alt="Facebook"
-      /></a>
-      <a href="https://www.twitter.com"
-        ><img src="twitter-icon.png" alt="Twitter"
-      /></a>
-      <a href="https://www.linkedin.com"
-        ><img src="linkedin-icon.png" alt="LinkedIn"
-      /></a>
-      <a href="https://www.instagram.com"
-        ><img src="instagram-icon.png" alt="Instagram"
-      /></a>
-    </div>
-
-    <div class="picture">
-      <img src="images/Portfolio.jpg" alt="portfolio pic" />
-    </div>
-
-    <div class="call-to-action">
-      <a href="contact.html">Contact Us</a>
-    </div>
-
+    
     <footer>
-      <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
+      
+      <div class="mobile-icons">
+        <span class="icons">
+          <button>
+            <a href="https://www.facebook.com/yourprofile"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </button>
+          <button>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </button>
+          <button>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </button>
+          <button>
+            <a href=""><i class="fab fa-github"></i></a>
+          </button>
+        </span>
+        <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
+      </div>
     </footer>
   </body>
 </html>
