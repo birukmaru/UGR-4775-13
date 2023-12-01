@@ -1,0 +1,240 @@
+body {
+  font-family: "Poppins", sans-serif;
+  --color1: #FFF ;
+  --color2: #181818 ;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color2);
+  padding: 12px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #e5e4e2;
+  color: #000;
+  padding: 8px;
+  margin-right: 10px;
+}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color1);
+  transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {display: none;}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: antiquewhite;
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+section {
+  margin-top: 0px;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.call-to-action a {
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+span{
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+.resume-download{
+  margin-top: 10px;
+}
+.resume-download a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.resume-download a:hover {
+  background-color: #555;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+section ul li {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  margin-right: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 5px;
+  box-shadow: 0 0 5px cyan,0 0 25px cyan ;
+
+}
+button:hover{
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+footer {
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+
+@media(max-width: 610px){
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: var(--color2);
+      transition: all 0.2s ease-in-out;
+  }
+  .desktop_icons{
+    display: none;
+  }
+  .mobile-icons{
+    display: block;
+
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 0px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright {
+    order: 1;
+    margin-right: auto;
+  }
+  .icons {
+    order: 2;
+    margin-left: auto;
+  }
+}
