@@ -5,56 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
     <link rel="stylesheet" href="About.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <h1>Brak</h1>
-      </div>
       <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Resume.html">Resume</a></li>
-          <li><a href="Visit.html">visit</a></li>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='Home.html'><h1>Brak</h1></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Visit.html">Visit</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2>About Me</h2>
-      </section>
+      <article>
+        <section class="new">
+          <h2>About Me</h2>
+        </section>
 
-      <section>
-        <h3><em>I'm Biruk Maru</em></h3>
-        <h3><em>I'm 21</em></h3>
-      </section>
+        <section>
+          <h3><em>I'm Biruk Maru,</em></h3>
+          <h3><em>I'm 21</em></h3>
+        </section>
+
+        <div>
+          <p><em>A Software Engineering Student at AAiT</em></p>
+          <p><em>210+ FINISHED PROJECTS</em></p>
+          <p><em>A UI/UX Designer & Web Developer Based in Ethiopia</em></p>
+        </div>
+      </article>
 
       <div>
-        <p><em>A Software Engineering Student at AAiT</em></p>
-        <p><em>A UI/UX Designer & Web Developer Based in Ethiopia</em></p>
+        <img src="images/Beck3.jpg" alt="My Photo" />
       </div>
 
-      <div>
-        <img src="images/Portfolio.jpg" alt="My Photo" />
-      </div>
-
-      <div class="social-icons">
-        <a href="https://www.facebook.com/yourprofile"
-          ><img src="facebook_icon.png" alt="Facebook"
-        /></a>
-        <a href="https://www.twitter.com/yourprofile"
-          ><img src="twitter_icon.png" alt="Twitter"
-        /></a>
-        <a href="https://www.linkedin.com/in/yourprofile"
-          ><img src="linkedin_icon.png" alt="LinkedIn"
-        /></a>
-        <a href="https://www.instagram.com/yourprofile"
-          ><img src="instagram_icon.png" alt="Instagram"
-        /></a>
-      </div>
+      
 
       <div class="call-to-action">
         <a href="contact.html">Contact Me</a>
@@ -62,6 +56,22 @@
     </main>
 
     <footer>
+      <span class="icons">
+        <button>
+          <a href="https://www.facebook.com/yourprofile"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </button>
+        <button>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </button>
+        <button>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </button>
+        <button>
+          <a href=""><i class="fab fa-github"></i></a>
+        </button>
+      </span>
       <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
     </footer>
   </body>
