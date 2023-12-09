@@ -118,22 +118,24 @@
   }
   
   .about .new {
-    font-size: 24px;
+    font-size: 34px;
   }
   
   .about section h3 {
-    margin-bottom: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: 34px;
   }
   
   .about section h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 32px;
+    margin-bottom: 18px;
     text-decoration: underline;
   }
   
   .about p {
-    margin-top: 16px;
+    margin-top: 34px;
+    font-size: 30px;
   }
   
   .about img {
@@ -238,7 +240,7 @@
       padding-bottom: 220px;
     }
   .about main > article,div{
-    width: 48%;
+    width: 100%;
     flex: 1;
   }
     .about article {
@@ -679,7 +681,7 @@
       flex-direction: column;
       text-align: start;
       margin-bottom: 20px;
-      align-items: flex-end;
+      align-items: center;
     }
   
 
@@ -732,11 +734,11 @@
     }
   
     .contact .icons button{
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   
     .contact .icons i{
-      font-size: 24px;
+      font-size: 34px;
   
     }
   
@@ -989,7 +991,7 @@
       display: flex;
       flex-direction: column;
       left: 10px;
-      top: 340px;
+      top: 400px;
     }
   
     .home .text {
@@ -1020,7 +1022,7 @@
     }
   
     .home .icons button{
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   
     .home .icons i{
@@ -1029,6 +1031,14 @@
     .home .call-to-action{
       margin-left: 135px;
     }
+
+    .home .copyright{
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+  
   
   }
 
@@ -1055,6 +1065,12 @@
       margin-left: 70px;
   
     }
+    .home .copyright{
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
 
   }
   
@@ -1066,6 +1082,13 @@
         padding: 20px;
         background-color: antiquewhite;
       }
+      .home .copyright{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+  
+    
   }
 
 
@@ -1657,7 +1680,7 @@
     }
   
     .visit .upper video{
-      width: 207%;
+      width: 100%;
     }
 
     .visit .other{
