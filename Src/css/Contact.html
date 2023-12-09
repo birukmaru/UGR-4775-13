@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="final.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -39,78 +39,81 @@
     </header>
 
     <main class="contact">
-      <div class="text contact">
-        <h2 class="contact">Better Together</h2>
+      <div>
+        <div class="text contact">
+          <h2 class="contact">Better Together</h2>
+        </div>
+
+        <div class="contact">
+          <p class="contact">
+            I Enjoy working with dedicated creatives from businesses that make
+            the world beautiful.
+          </p>
+        </div>
+
+        <section class="contact">
+          <h3 class="contact">We can do so much together. Let's talk.</h3>
+        </section>
+
+        <div class="contact">
+          <p class="contact">
+            If you want mail:
+            <a href="mailto:birukmaru12@gmail.com" class="contact"
+              >birukmaru12@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="contact">
+          <p class="contact">
+            If you want to hear my voice call to:
+            <strong class="contact">+251989122801</strong>
+          </p>
+        </div>
       </div>
+      <div>
+        <h2 class="contact">Contact Form</h2>
+        <form action="process_form.php" method="POST" class="contact">
+          <table class="contact">
+            <tr class="contact">
+              <th class="contact">
+                <input type="text" name="name" placeholder="Your Name" />
+              </th>
+            </tr>
 
-      <div class="contact">
-        <p class="contact">
-          I Enjoy working with dedicated creatives from businesses that make the
-          world beautiful.
-        </p>
-      </div>
+            <tr class="contact">
+              <th class="contact">
+                <input type="text" name="name" placeholder="Father Name" />
+              </th>
+            </tr>
 
-      <section class="contact">
-        <h3 class="contact">We can do so much together. Let's talk.</h3>
-      </section>
+            <tr class="contact">
+              <th class="contact">
+                <input
+                  type="number"
+                  name="phone number"
+                  placeholder="Your Phone number"
+                />
+              </th>
+            </tr>
 
-      <div class="contact">
-        <p class="contact">
-          If you want mail:
-          <a href="mailto:birukmaru12@gmail.com" class="contact"
-            >birukmaru12@gmail.com</a
-          >
-        </p>
-      </div>
+            <tr class="contact">
+              <th class="contact">
+                <input type="email" name="email" placeholder="Your Email" />
+              </th>
+            </tr>
 
-      <div class="contact">
-        <p class="contact">
-          If you want to hear my voice call to:
-          <strong class="contact">+251989122801</strong>
-        </p>
-      </div>
-
-      <h2 class="contact">Contact Form</h2>
-      <form action="process_form.php" method="POST" class="contact">
-        <table class="contact">
-          <tr class="contact">
-            <th class="contact">
-              <input type="text" name="name" placeholder="Your Name" />
-            </th>
-          </tr>
-
-          <tr class="contact">
-            <th class="contact">
-              <input type="text" name="name" placeholder="Father Name" />
-            </th>
-          </tr>
-
-          <tr class="contact">
-            <th class="contact">
-              <input
-                type="number"
-                name="phone number"
-                placeholder="Your Phone number"
-              />
-            </th>
-          </tr>
-
-          <tr class="contact">
-            <th class="contact">
-              <input type="email" name="email" placeholder="Your Email" />
-            </th>
-          </tr>
-
-          <tr class="contact">
-            <th class="contact">
-              <textarea name="message" placeholder="Your Message"></textarea>
-            </th>
-          </tr>
-        </table>
-        <input type="submit" value="Submit" class="contact" />
-      </form>
-      <div class="call-to-action contact">
-        <a href="contact.html" class="contact">Contact Me</a>
+            <tr class="contact">
+              <th class="contact">
+                <textarea name="message" placeholder="Your Message"></textarea>
+              </th>
+            </tr>
+          </table>
+          <input type="submit" value="Submit" class="contact" />
+        </form>
+        <div class="call-to-action contact">
+          <a href="contact.html" class="contact">Contact Me</a>
+        </div>
       </div>
     </main>
 
