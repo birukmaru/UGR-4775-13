@@ -349,7 +349,7 @@
   }
   
   
-  @media only screen and (min-width: 425)and(max-device-width: 767px) and (orientation: landscape){
+  @media only screen and (min-width: 425px) and (max-width: 767px) and (orientation: landscape){
     .about main {
       display: flex;
       flex-direction: column;
@@ -359,7 +359,7 @@
       background-color: antiquewhite;
     }
   
-  }
+}
   
 
 
