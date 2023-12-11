@@ -635,7 +635,9 @@
       flex-direction: row; 
       text-align: left; 
       align-items: flex-start; 
+
     }
+
   
     .contact .text {
       font-size: 24px;
@@ -647,7 +649,7 @@
       background-image: linear-gradient(rgb(36, 34, 34), #c28c8c);
       background-repeat: no-repeat;
       -webkit-background-clip: text;
-      background-position: -300px 0;
+      background-position: -450px 0;
       animation: backcolor 5s linear infinite alternate;
     }
     
