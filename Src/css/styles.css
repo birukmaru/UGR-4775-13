@@ -1005,7 +1005,7 @@
       background-image: linear-gradient(rgb(36, 34, 34), #c28c8c);
       background-repeat: no-repeat;
       -webkit-background-clip: text;
-      background-position: -800px ;
+      background-position: -1300px ;
       animation: backcolor 7s linear infinite alternate;
     }
     
