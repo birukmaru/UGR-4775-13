@@ -4,65 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
-    <link rel="stylesheet" href="About.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1>Brak</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Resume.html">Resume</a></li>
-          <li><a href="Visit.html">visit</a></li>
-        </ul>
+  <body class="About">
+    <header class="About">
+      <nav
+        class="navbar is-black"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="Home.html">
+            <h1>Brak</h1>
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="Home.html" class="navbar-item">Home</a>
+            <a href="About.html" class="navbar-item">About</a>
+            <a href="Contact.html" class="navbar-item">Contact</a>
+            <a href="Resume.html" class="navbar-item">Resume</a>
+            <a href="Visit.html" class="navbar-item">Visit</a>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>About Me</h2>
-      </section>
+    <section
+      class="section has-background-warning-light row flex columns is-flex-direction-column-reverse-tablet"
+    >
+      <div class="flex columns is-flex-direction-column-reverse-tablet">
+        <article class="is-12-tablet is-12-desktop px-5">
+          <div class="">
+            <p
+              class="title is-3 has-text-weight-bold is-italic has-text-underlined"
+            >
+              About Me
+            </p>
+          </div>
+          <div class="py-4">
+            <h3 class="title is-5 mb-4">I'm Biruk Maru,</h3>
+            <h3 class="title is-5 pt-0">I'm 21</h3>
+            <p class="py-1 is-family-monospace">
+              A Software Engineering Student at AAiT
+            </p>
+            <p class="py-1 is-family-monospace">210+ FINISHED PROJECTS</p>
+            <p class="py-1 is-family-monospace">
+              A UI/UX Designer & Web Developer Based in Ethiopia
+            </p>
+          </div>
+        </article>
 
-      <section>
-        <h3><em>I'm Biruk Maru</em></h3>
-        <h3><em>I'm 21</em></h3>
-      </section>
-
-      <div>
-        <p><em>A Software Engineering Student at AAiT</em></p>
-        <p><em>A UI/UX Designer & Web Developer Based in Ethiopia</em></p>
+        <div class="column">
+          <div class="column is-12-desktop">
+            <figure class="image">
+              <img src="images/Beck3.jpg" alt="My Photo" class="is-2by2" />
+            </figure>
+          </div>
+          <div class="column">
+            <div class="buttons">
+              <a class="button is-primary" href="contact.html"> Contact Me </a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <img src="images/Portfolio.jpg" alt="My Photo" />
+    <footer
+      class="footer has-background-black has-text-white mt-1 mb-1 pb-5 pt-2"
+    >
+      <div class="columns is-vcentered content has-text-centered">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="buttons is-centered">
+            <a
+              href="https://www.facebook.com/yourprofile"
+              class="button is-link is-light"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="button is-light">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="button is-light">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="button is-light">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <p class="has-text-centered">
+            &copy; 2023 Biruk Maru. All rights reserved.
+          </p>
+        </div>
       </div>
-
-      <div class="social-icons">
-        <a href="https://www.facebook.com/yourprofile"
-          ><img src="facebook_icon.png" alt="Facebook"
-        /></a>
-        <a href="https://www.twitter.com/yourprofile"
-          ><img src="twitter_icon.png" alt="Twitter"
-        /></a>
-        <a href="https://www.linkedin.com/in/yourprofile"
-          ><img src="linkedin_icon.png" alt="LinkedIn"
-        /></a>
-        <a href="https://www.instagram.com/yourprofile"
-          ><img src="instagram_icon.png" alt="Instagram"
-        /></a>
-      </div>
-
-      <div class="call-to-action">
-        <a href="contact.html">Contact Me</a>
-      </div>
-    </main>
-
-    <footer>
-      <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
     </footer>
+    <script src="portfolio.js"></script>
   </body>
 </html>
