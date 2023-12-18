@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Resume Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -14,19 +14,19 @@
     />
   </head>
   <body class="resume">
-    <header class="header resume">
-      <nav class="nav resume">
+    <header class="resume">
+      <nav class="resume">
         <ul class="nav-bar resume">
           <li class="logo resume">
-            <a href="Resume.html"><h1>Brak</h1></a>
+            <a href="Home.html"><h1>Brak</h1></a>
           </li>
           <input type="checkbox" id="check" />
           <span class="menu resume">
-            <li class="menu-item resume"><a href="Home.html">Home</a></li>
-            <li class="menu-item resume"><a href="About.html">About</a></li>
-            <li class="menu-item resume"><a href="Contact.html">Contact</a></li>
-            <li class="menu-item resume"><a href="Resume.html">Resume</a></li>
-            <li class="menu-item resume"><a href="Visit.html">Visit</a></li>
+            <li class="resume"><a href="Home.html">Home</a></li>
+            <li class="resume"><a href="About.html">About</a></li>
+            <li class="resume"><a href="Contact.html">Contact</a></li>
+            <li class="resume"><a href="Resume.html">Resume</a></li>
+            <li class="resume"><a href="Visit.html">Visit</a></li>
             <label for="check" class="close-menu resume"
               ><i class="fas fa-times"></i
             ></label>
@@ -37,6 +37,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="resume">
       <div class="top">
         <section class="resume">
@@ -100,9 +101,11 @@
         </section>
 
         <div class="resume-download resume">
-          <a href="images/Resume.pdf" download class="resume"
-            >Download Full Resume (PDF)</a
-          >
+          <button class="buttons" onclick=" downloadResume()">
+            <a href="images/Resume.pdf" download class="resume"
+              >Download Full Resume (PDF)</a
+            >
+          </button>
         </div>
       </div>
     </main>
@@ -128,5 +131,6 @@
         &copy; 2023 Biruk Maru. All rights reserved.
       </div>
     </footer>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>
