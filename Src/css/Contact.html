@@ -14,21 +14,19 @@
     />
   </head>
   <body class="contact">
-    <header class="header contact">
-      <nav class="nav contact">
+    <header class="contact">
+      <nav class="contact">
         <ul class="nav-bar contact">
           <li class="logo contact">
             <a href="Home.html"><h1>Brak</h1></a>
           </li>
           <input type="checkbox" id="check" />
           <span class="menu contact">
-            <li class="menu-item contact"><a href="Home.html">Home</a></li>
-            <li class="menu-item contact"><a href="About.html">About</a></li>
-            <li class="menu-item contact">
-              <a href="Contact.html">Contact</a>
-            </li>
-            <li class="menu-item contact"><a href="Resume.html">Resume</a></li>
-            <li class="menu-item contact"><a href="Visit.html">Visit</a></li>
+            <li class="contact"><a href="Home.html">Home</a></li>
+            <li class="contact"><a href="About.html">About</a></li>
+            <li class="contact"><a href="Contact.html">Contact</a></li>
+            <li class="contact"><a href="Resume.html">Resume</a></li>
+            <li class="contact"><a href="Visit.html">Visit</a></li>
             <label for="check" class="close-menu contact"
               ><i class="fas fa-times"></i
             ></label>
@@ -75,23 +73,39 @@
       </div>
       <div>
         <h2 class="contact">Contact Form</h2>
-        <form action="process_form.php" method="POST" class="contact">
+        <form
+          action="https://formsubmit.co/birrukmaru12@gmail.com"
+          method="POST"
+          class="contact"
+          id="commentForm"
+        >
           <table class="contact">
             <tr class="contact">
               <th class="contact">
-                <input type="text" name="name" placeholder="Your Name" />
-              </th>
-            </tr>
-
-            <tr class="contact">
-              <th class="contact">
-                <input type="text" name="name" placeholder="Father Name" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                />
               </th>
             </tr>
 
             <tr class="contact">
               <th class="contact">
                 <input
+                  type="text"
+                  name="name"
+                  id="fathername"
+                  placeholder="Father Name"
+                />
+              </th>
+            </tr>
+
+            <tr class="contact">
+              <th class="contact">
+                <input
+                  id="phone"
                   type="number"
                   name="phone number"
                   placeholder="Your Phone number"
@@ -101,17 +115,31 @@
 
             <tr class="contact">
               <th class="contact">
-                <input type="email" name="email" placeholder="Your Email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                />
               </th>
             </tr>
 
             <tr class="contact">
               <th class="contact">
-                <textarea name="message" placeholder="Your Message"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                ></textarea>
               </th>
             </tr>
           </table>
-          <input type="submit" value="Submit" class="contact" />
+          <input
+            onclick="sendMail()"
+            type="submit"
+            value="Submit"
+            class="contact"
+          />
         </form>
         <div class="call-to-action contact">
           <a href="contact.html" class="contact">Contact Me</a>
@@ -141,5 +169,16 @@
         &copy; 2023 Biruk Maru. All rights reserved.
       </div>
     </footer>
+    <script src="js/portfolio.js"></script>
   </body>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("VbEhGK32tRH1Las4B");
+    })();
+  </script>
 </html>
