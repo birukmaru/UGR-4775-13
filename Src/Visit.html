@@ -3,142 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Visit Page</title>
-    <link rel="stylesheet" href="Visit.css" />
+    <title>Visit Page</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1>Brak</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Resume.html">Resume</a></li>
-          <li><a href="Visit.html">visit</a></li>
+
+  <body class="bg-yellow-100 font-sans">
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <a href="Home.html" class="text-white hover:text-blue-400">Brak</a>
+        </div>
+        <div class="block lg:hidden">
+          <button id="toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div>
-        <video controls>
-          <source
-            src="images/Highlights_of_our_Ethiopia_Tour_from_above_2018_Lalibela_Danakil.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div class="description">
-          <details>
-            <summary>Click to show description</summary>
-            <p>
-              Lalibela is a historic town known for its rock-hewn churches,
-              carved out of solid rock in the 12th century. Bale Mountains
-              National Park showcases diverse wildlife and rugged landscapes,
-              with Ethiopian wolves and mountain nyala being notable
-              inhabitants. The Semien Mountains offer towering peaks, deep
-              gorges, and endemic wildlife like the gelada baboon. Ashenda is a
-              vibrant cultural festival celebrated with music, dancing, and
-              traditional performances. Gondar features medieval castles and
-              churches reflecting Ethiopian and European architectural styles.
-              Lake Tana's picturesque islands and monasteries hold both scenic
-              and religious significance. The Danakil Depression presents
-              surreal volcanic landscapes and colorful mineral deposits. Harar
-              is a historic walled city famous for its unique architecture,
-              vibrant markets, and hyena feeding ceremony. The Omo Valley is a
-              culturally diverse region showcasing indigenous tribes and their
-              customs. Lastly, the Blue Nile Falls cascades down terraces,
-              creating a spectacular waterfall known as the "smoking water."
-            </p>
-          </details>
-        </div>
       </div>
-
-      <div>
-        <audio controls>
-          <source
-            src="images/Highlights_of_our_Ethiopia_Tour_from_above_2018_Lalibela_Danakil.mp3"
-            type="audio/mpeg"
-          />
-        </audio>
-        <div class="description">
-          <details>
-            <summary>Click to show description</summary>
-            <p>
-              "Fikir Eske Mekabir" is an audio book that takes listeners on a
-              captivating journey through Ethiopian history and culture. Through
-              vivid storytelling, it explores themes of love, politics, and the
-              struggle for freedom. This compelling narrative, written by
-              renowned Ethiopian author Haddis Alemayehu, offers an immersive
-              experience that engages and captivates the imagination.
-            </p>
-          </details>
-        </div>
+      <div
+        id="menu"
+        class="lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-blue-500 text-white opacity-0 invisible transition-opacity duration-300"
+      >
+        <button
+          id="close"
+          class="absolute top-4 right-4 text-white focus:outline-none"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="flex flex-col items-center mt-20 space-y-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-gray-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="picture-description">
-        <img src="images/Lalibela.jpg" alt="Image 1" />
-        <div class="description">
-          <details>
-            <summary>Click to show description</summary>
-            <p>
-              The photo captures the mesmerizing beauty of a church in Lalibela,
-              Ethiopia. Lalibela is renowned for its remarkable rock-hewn
-              churches, which are a UNESCO World Heritage site. The church in
-              the photo showcases intricate architectural details carved
-              directly into the solid rock. The exterior features ornate
-              carvings, while the interior reveals a dimly lit space adorned
-              with ancient religious artwork and symbols. The photo conveys a
-              sense of awe and reverence, highlighting the historical and
-              cultural significance of Lalibela's churches as remarkable
-              examples of human craftsmanship and devotion.
-            </p>
-          </details>
+    <main class="container mx-auto p-4 bg-antiquewhite">
+      <div class="flex flex-col">
+        <div class="mb-8">
+          <video controls class="w-full rounded-md">
+            <source
+              src="images/Highlights_of_our_Ethiopia_Tour_from_above_2018_Lalibela_Danakil.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="description mt-4">
+            <details>
+              <summary class="cursor-pointer">
+                Click to show description
+              </summary>
+              <p>
+                Lalibela is a historic town known for its rock-hewn churches,
+                carved out of solid rock in the 12th century...
+              </p>
+            </details>
+          </div>
         </div>
-      </div>
 
-      <div class="picture-description">
-        <img src="images/Gondar.jpg" alt="Image 2" />
-        <div class="description">
-          <details>
-            <summary>Click to show description</summary>
-            <p>
-              The photo showcases the grandeur of a Gondar castle in Ethiopia.
-              Gondar, also known as the "Camelot of Africa," is famous for its
-              medieval castles and royal heritage. The castle in the photo
-              stands proudly against the sky, displaying impressive
-              architectural features and intricate details. Its towering walls,
-              adorned with decorative motifs and ornate windows, exude a sense
-              of power and majesty. Stepping inside, one can explore the
-              castle's vast halls, royal chambers, and lush gardens, which once
-              hosted Ethiopian emperors and witnessed significant historical
-              events. The photo captures the rich history and regal ambiance of
-              Gondar's castles, transporting viewers to a bygone era of royal
-              splendor and cultural significance.
-            </p>
-          </details>
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-1/3 mr-4 flex flex-col">
+            <audio controls class="w-full">
+              <source
+                src="images/Highlights_of_our_Ethiopia_Tour_from_above_2018_Lalibela_Danakil.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+            <div class="description mt-4">
+              <details>
+                <summary class="cursor-pointer">
+                  Click to show description
+                </summary>
+                <p>
+                  "Fikir Eske Mekabir" is an audio book that takes listeners on
+                  a captivating journey through Ethiopian history and culture...
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/3 mr-4 flex flex-col">
+            <img
+              src="images/Lalibela.jpg"
+              alt="Image 1"
+              class="w-full rounded-md"
+            />
+            <div class="description ml-4">
+              <details>
+                <summary class="cursor-pointer">
+                  Click to show description
+                </summary>
+                <p>
+                  The photo captures the mesmerizing beauty of a church in
+                  Lalibela, Ethiopia...
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/3 mr-4 flex flex-col">
+            <img
+              src="images/Gondar.jpg"
+              alt="Image 2"
+              class="w-full rounded-md"
+            />
+            <div class="description ml-4">
+              <details>
+                <summary class="cursor-pointer">
+                  Click to show description
+                </summary>
+                <p>
+                  The photo showcases the grandeur of a Gondar castle in
+                  Ethiopia...
+                </p>
+              </details>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/yourprofile"
-          ><img src="facebook_icon.png" alt="Facebook"
-        /></a>
-        <a href="https://www.twitter.com/yourprofile"
-          ><img src="twitter_icon.png" alt="Twitter"
-        /></a>
-        <a href="https://www.linkedin.com/in/yourprofile"
-          ><img src="linkedin_icon.png" alt="LinkedIn"
-        /></a>
-        <a href="https://www.instagram.com/yourprofile"
-          ><img src="instagram_icon.png" alt="Instagram"
-        /></a>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <div class="flex justify-center mb-4">
+        <button class="mr-2">
+          <a href="https://www.facebook.com/yourprofile" class="text-white"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-twitter"></i></a>
+        </button>
+        <button>
+          <a href="" class="text-white"><i class="fab fa-github"></i></a>
+        </button>
       </div>
-      <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
+      <div class="text-center">
+        &copy; 2023 Biruk Maru. All rights reserved.
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
