@@ -4,65 +4,182 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
-    <link rel="stylesheet" href="About.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1>Brak</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Resume.html">Resume</a></li>
-          <li><a href="Visit.html">visit</a></li>
+
+  <body class="bg-yellow-100 font-sans">
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <a href="Home.html" class="text-white hover:text-blue-400">Brak</a>
+        </div>
+        <div class="block lg:hidden">
+          <button id="toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section>
-        <h2>About Me</h2>
-      </section>
-
-      <section>
-        <h3><em>I'm Biruk Maru</em></h3>
-        <h3><em>I'm 21</em></h3>
-      </section>
-
-      <div>
-        <p><em>A Software Engineering Student at AAiT</em></p>
-        <p><em>A UI/UX Designer & Web Developer Based in Ethiopia</em></p>
       </div>
-
-      <div>
-        <img src="images/Portfolio.jpg" alt="My Photo" />
+      <div
+        id="menu"
+        class="lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-blue-500 text-white opacity-0 invisible transition-opacity duration-300"
+      >
+        <button
+          id="close"
+          class="absolute top-4 right-4 text-white focus:outline-none"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="flex flex-col items-center mt-20 space-y-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-gray-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="social-icons">
-        <a href="https://www.facebook.com/yourprofile"
-          ><img src="facebook_icon.png" alt="Facebook"
-        /></a>
-        <a href="https://www.twitter.com/yourprofile"
-          ><img src="twitter_icon.png" alt="Twitter"
-        /></a>
-        <a href="https://www.linkedin.com/in/yourprofile"
-          ><img src="linkedin_icon.png" alt="LinkedIn"
-        /></a>
-        <a href="https://www.instagram.com/yourprofile"
-          ><img src="instagram_icon.png" alt="Instagram"
-        /></a>
-      </div>
+    <main class="about flex flex-col p-4">
+      <div class="flex lg:flex-row md:flex flex-col">
+        <article class="about text-center lg:w-1/2 mb-8 py-20">
+          <section class="new about mt-30">
+            <h2
+              class="md:underline text-4xl my-5 font-weight: 600 font-bold text-red-400 hover:text-blue-300"
+            >
+              About Me
+            </h2>
+          </section>
+          <section class="about">
+            <h3 class="italic text-xl mt-3 font-weight: 500 font-bold">
+              I'm Biruk Maru,
+            </h3>
+            <h3 class="italic mt-1 mb-5 font-weight: 500 font-bold text-2xl">
+              I'm 21
+            </h3>
+          </section>
+          <div class="about">
+            <p class="italic my-2 font-bold">
+              A Software Engineering Student at AAiT
+            </p>
+            <p class="italic font-bold">210+ FINISHED PROJECTS</p>
+            <p class="italic mt-2 font-bold">
+              A UI/UX Designer & Web Developer Based in Ethiopia
+            </p>
+          </div>
+        </article>
 
-      <div class="call-to-action">
-        <a href="contact.html">Contact Me</a>
+        <div class="picture about">
+          <img
+            src="images/Beck3.jpg"
+            alt="My Photo"
+            class="w-full mb-4 rounded-md"
+          />
+          <div class="call-to-action about">
+            <a href="contact.html" class="bg-black text-white px-4 py-2 rounded"
+              >Contact Me</a
+            >
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer>
-      <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <div class="flex justify-center mb-4">
+        <button class="mr-2">
+          <a href="https://www.facebook.com/yourprofile" class="text-white"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-twitter"></i></a>
+        </button>
+        <button>
+          <a href="" class="text-white"><i class="fab fa-github"></i></a>
+        </button>
+      </div>
+      <div class="text-center">
+        &copy; 2023 Biruk Maru. All rights reserved.
+      </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="tailwind.config.js"></script>
   </body>
 </html>
