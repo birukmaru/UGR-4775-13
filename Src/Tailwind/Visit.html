@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-yellow-100 font-sans">
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <a href="#about" class="text-white">Brak</a>
+        </div>
+        <div class="block lg:hidden">
+          <button id="toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        id="menu"
+        class="lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-blue-500 text-white opacity-0 invisible transition-opacity duration-300"
+      >
+        <button
+          id="close"
+          class="absolute top-4 right-4 text-white focus:outline-none"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="flex flex-col items-center mt-20 space-y-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-gray-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container mx-auto p-4 bg-antiquewhite">
+      <div class="flex flex-col">
+        <div class="mb-8">
+          <video controls class="w-full rounded-md">
+            <source
+              src="images/Highlights_of_our_Ethiopia_Tour_from_above_2018_Lalibela_Danakil.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="description mt-4">
+            <details>
+              <summary class="cursor-pointer">
+                Click to show description
+              </summary>
+              <p>
+                Lalibela is a historic town known for its rock-hewn churches,
+                carved out of solid rock in the 12th century...
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-1/3 mr-4 flex flex-col">
+            <audio controls class="w-full">
+              <source
+                src="images/Highlights_of_our_Ethiopia_Tour_from_above_2018_Lalibela_Danakil.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+            <div class="description mt-4">
+              <details>
+                <summary class="cursor-pointer">
+                  Click to show description
+                </summary>
+                <p>
+                  "Fikir Eske Mekabir" is an audio book that takes listeners on
+                  a captivating journey through Ethiopian history and culture...
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/3 mr-4 flex flex-col">
+            <img
+              src="images/Lalibela.jpg"
+              alt="Image 1"
+              class="w-full rounded-md"
+            />
+            <div class="description ml-4">
+              <details>
+                <summary class="cursor-pointer">
+                  Click to show description
+                </summary>
+                <p>
+                  The photo captures the mesmerizing beauty of a church in
+                  Lalibela, Ethiopia...
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/3 mr-4 flex flex-col">
+            <img
+              src="images/Gondar.jpg"
+              alt="Image 2"
+              class="w-full rounded-md"
+            />
+            <div class="description ml-4">
+              <details>
+                <summary class="cursor-pointer">
+                  Click to show description
+                </summary>
+                <p>
+                  The photo showcases the grandeur of a Gondar castle in
+                  Ethiopia...
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <div class="flex justify-center mb-4">
+        <button class="mr-2">
+          <a href="https://www.facebook.com/yourprofile" class="text-white"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-twitter"></i></a>
+        </button>
+        <button>
+          <a href="" class="text-white"><i class="fab fa-github"></i></a>
+        </button>
+      </div>
+      <div class="text-center">
+        &copy; 2023 Biruk Maru. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
