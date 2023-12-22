@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-yellow-100 font-sans">
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <a href="Home.html" class="text-white hover:text-blue-400">Brak</a>
+        </div>
+        <div class="block lg:hidden">
+          <button id="toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        id="menu"
+        class="lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-blue-500 text-white opacity-0 invisible transition-opacity duration-300"
+      >
+        <button
+          id="close"
+          class="absolute top-4 right-4 text-white focus:outline-none"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="flex flex-col items-center mt-20 space-y-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-gray-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="contact flex flex-col text-center p-5 justify-center">
+      <div class="flex lg:flex-row md:flex flex-col">
+        <div class="lg:w-1/2 my-10">
+          <div class="text contact">
+            <h2
+              class="md:underline text-4xl my-5 font-weight: 600 font-bold text-red-400 hover:text-blue-300 pb-5"
+            >
+              Better Together
+            </h2>
+          </div>
+
+          <div class="contact">
+            <p class="contact text-xl italic font-awesome pb-5">
+              I Enjoy working with dedicated creatives from businesses that make
+              the world beautiful.
+            </p>
+          </div>
+
+          <section class="contact">
+            <h3 class="contact text-xl mb-5 italic font-bold">
+              We can do so much together. Let's talk.
+            </h3>
+          </section>
+
+          <div class="contact">
+            <p class="contact text-lg pb-5 font-awesome">
+              If you want mail:
+              <a href="mailto:birukmaru12@gmail.com" class="contact font-bold"
+                >birukmaru12@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="contact">
+            <p class="contact text-lg font-awesome">
+              If you want to hear my voice call to:
+              <strong class="contact">+251989122801</strong>
+            </p>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <h2 class="contact text-3xl font-bold pb-5">Contact Form</h2>
+          <form
+            action="https://formsubmit.co/birrukmaru12@gmail.com"
+            method="POST"
+            class="contact flex flex-col items-center"
+            id="commentForm"
+          >
+            <div class="contact table w-1 m-auto py-1">
+              <div class="contact th p-1">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                  class="bg-white px-20 w-400 p-4 my-3 rounded-md shadow-m"
+                />
+              </div>
+            </div>
+
+            <div class="contact table w-300 m-auto py-1">
+              <div class="contact th p-1">
+                <input
+                  type="text"
+                  name="name"
+                  id="fathername"
+                  placeholder="Father Name"
+                  class="bg-white px-20 w-400 p-4 my-3 rounded-md shadow-m"
+                />
+              </div>
+            </div>
+
+            <div class="contact table w-300 m-auto">
+              <div class="contact th p-1">
+                <input
+                  id="phone"
+                  type="number"
+                  name="phone number"
+                  placeholder="Your Phone number"
+                  class="bg-white px-20 w-400 p-4 my-3 rounded-md shadow-m"
+                />
+              </div>
+            </div>
+
+            <div class="contact table w-300 m-auto">
+              <div class="contact th p-1">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  class="bg-white w-400 px-20 p-4 my-3 rounded-md shadow-m"
+                />
+              </div>
+            </div>
+
+            <div class="contact table w-300 m-auto">
+              <div class="contact th p-1">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  class="bg-white w-400 p-4 px-20 my-3 rounded-md shadow-m"
+                ></textarea>
+              </div>
+            </div>
+            <button
+              class="contact inline-block py-0 px-6 bg-gray-800 text-white text-decoration-none rounded-md p-3 mb-2"
+            >
+              <input
+                onclick="sendMail()"
+                type="submit"
+                value="Submit"
+                class="contact w-200 mb-2 bg-gray-800 text-white border-none p-2 px-4 cursor-pointer bg-white w-400 rounded-md shadow-m"
+              />
+            </button>
+          </form>
+          <div class="call-to-action contact flex flex-col items-center">
+            <a
+              href="contact.html"
+              class="contact inline-block py-2 px-6 bg-black text-white text-decoration-none rounded-md"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <div class="flex justify-center mb-4">
+        <button class="mr-2">
+          <a href="https://www.facebook.com/yourprofile" class="text-white"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-twitter"></i></a>
+        </button>
+        <button>
+          <a href="" class="text-white"><i class="fab fa-github"></i></a>
+        </button>
+      </div>
+      <div class="text-center">
+        &copy; 2023 Biruk Maru. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
+      integrity="sha512-QvWDGNpBrAEtdWNvT/J8gFbsWp2P3CGfEicOHJ1RCbawvzNSF7YE0iI2pgYkrzviD1S1zE3ZoILB0EAKAHe0zg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("VbEhGK32tRH1Las4B");
+      })();
+    </script>
+  </body>
+</html>

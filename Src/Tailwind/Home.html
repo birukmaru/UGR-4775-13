@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-yellow-100 font-sans">
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <a href="Home.html" class="text-white hover:text-blue-400">Brak</a>
+        </div>
+        <div class="block lg:hidden">
+          <button id="toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        id="menu"
+        class="lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-blue-500 text-white opacity-0 invisible transition-opacity duration-300"
+      >
+        <button
+          id="close"
+          class="absolute top-4 right-4 text-white focus:outline-none"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="flex flex-col items-center mt-20 space-y-4">
+          <li>
+            <a
+              href="Home.html"
+              class="text-white border-b border-white text-black hover:text-gray-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="Resume.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="Visit.html"
+              class="text-white border-b border-white text-black hover:text-red-200"
+              >Visit</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="about" class="container mx-auto mt-8">
+      <div class="text-center">
+        <h2
+          class="text-2xl font-bold mb-4 underline-white md:underline text-4xl my-5 font-weight: 600 font-bold text-blue-500 hover:text-blue-300"
+        >
+          Welcome
+        </h2>
+
+        <article class="max-w-2xl mx-auto mb-6">
+          <h3 class="text-xl font-bold mb-2 text-gray-600">
+            I'm <span></span> Biruk, A passionate developer
+          </h3>
+
+          <p class="text-gray-600 font-bold">
+            I HELP COMPANIES MAKE A BEAUTIFUL WEBSITE
+          </p>
+        </article>
+
+        <img
+          src="images/Portfolio.jpg"
+          alt="Your Photo"
+          class="w-full rounded-lg mb-6"
+        />
+
+        <div class="mb-6">
+          <a
+            href="Contact.html"
+            class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-900"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <div class="flex justify-center mb-4">
+        <button class="mr-2">
+          <a href="https://www.facebook.com/yourprofile" class="text-white"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+        </button>
+        <button class="mr-2">
+          <a href="" class="text-white"><i class="fab fa-twitter"></i></a>
+        </button>
+        <button>
+          <a href="" class="text-white"><i class="fab fa-github"></i></a>
+        </button>
+      </div>
+      <div class="text-center">
+        &copy; 2023 Biruk Maru. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
