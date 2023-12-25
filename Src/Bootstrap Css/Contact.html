@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="contact">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!--For icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-secondary h-100">
+    <header class="rounded">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Home.html">Brak</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Visit.html">Visit</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact container mt-5 pt-3">
+      <div class="container row">
+        <div class="container col-md-6">
+          <div class="text contact">
+            <h2 class="mb-4 text-white">Better Together</h2>
+            <p class="contact h6">
+              I Enjoy working with dedicated creatives from businesses that make
+              the world beautiful.
+            </p>
+          </div>
+
+          <section class="contact">
+            <h3 class="mb-4">We can do so much together. Let's talk.</h3>
+          </section>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p class="contact h6">
+                If you want mail:
+                <a href="mailto:birukmaru12@gmail.com" class="contact"
+                  >birukmaru12@gmail.com</a
+                >
+              </p>
+              <p class="contact h6">
+                If you want to hear my voice call to:
+                <strong class="contact">+251989122801</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-12">
+            <h2 class="mb-4">Contact Form</h2>
+            <form
+              action="https://formsubmit.co/birrukmaru12@gmail.com"
+              method="POST"
+              class="contact"
+              id="commentForm"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="fathername"
+                  id="fathername"
+                  class="form-control"
+                  placeholder="Father Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  id="phone"
+                  type="number"
+                  name="phone number"
+                  class="form-control"
+                  placeholder="Your Phone number"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <input
+                onclick="sendMail()"
+                type="submit"
+                value="Submit"
+                class="btn btn-dark"
+              />
+            </form>
+            <div class="contact mt-3">
+              <a href="contact.html" class="btn btn-dark">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="container-fluid bg-dark text-white text-center py-2 mt-5 mb-0"
+    >
+      <span class="icons">
+        <a href="https://www.facebook.com/yourprofile" class="btn btn-light"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="" class="btn btn-light"><i class="fab fa-instagram"></i></a>
+        <a href="" class="btn btn-light"><i class="fab fa-twitter"></i></a>
+        <a href="" class="btn btn-light"><i class="fab fa-github"></i></a>
+      </span>
+      <div class="copyright">&copy; 2023 Biruk Maru. All rights reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("VbEhGK32tRH1Las4B");
+      })();
+    </script>
+  </body>
+</html>
